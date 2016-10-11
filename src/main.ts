@@ -1,6 +1,6 @@
-import './polyfills.ts';
+import './polyfills.ts'
 
-import { bootstrap } from './bootstrap';
-import { AppModule } from './app/';
+import { bootstrap } from './bootstrap'
+import { AppModule } from './app/'
 
-bootstrap(AppModule);
+bootstrap(AppModule)

@@ -14,8 +14,8 @@ import { AppRoutingModule } from './app-routing.module'
 @NgModule({
   imports: [
     BrowserModule,
-    ContactModule,
     CoreModule.forRoot({userName: 'Miss Marple'}),
+    ContactModule,
     AppRoutingModule
   ],
   declarations: [ AppComponent ],
