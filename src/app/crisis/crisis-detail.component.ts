@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute }    from '@angular/router';
+import { Component, OnInit } from '@angular/core'
+import { ActivatedRoute }    from '@angular/router'
 
 @Component({
   template: `
@@ -10,10 +10,10 @@ import { ActivatedRoute }    from '@angular/router';
   `
 })
 export class CrisisDetailComponent implements OnInit {
-  id: number;
+  id: number
   constructor(private route: ActivatedRoute) {  }
 
   ngOnInit() {
-    this.id = parseInt(this.route.snapshot.params['id'], 10);
+    this.id = parseInt(this.route.snapshot.params['id'], 10)
   }
 }

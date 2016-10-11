@@ -1,8 +1,8 @@
-import { Component }   from '@angular/core';
+import { Component }   from '@angular/core'
 
-import { HeroService } from './hero.service';
-import { UserService } from '../core/user.service';
-import { CacheService } from  '../shared/cache.service';
+import { HeroService } from './hero.service'
+import { UserService } from '../core/user.service'
+import { CacheService } from  '../shared/cache.service'
 
 @Component({
   template: `
@@ -13,11 +13,11 @@ import { CacheService } from  '../shared/cache.service';
   providers: [ HeroService ]
 })
 export class HeroComponent {
-  userName: string = '';
-  cache: string = '';
+  userName: string = ''
+  cache: string = ''
 
   constructor(userService: UserService, cacheService: CacheService) {
-    this.userName = userService.userName;
-    this.cache = cacheService.getCache();
+    this.userName = userService.userName
+    this.cache = cacheService.getCache()
   }
 }

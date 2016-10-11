@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute }    from '@angular/router';
+import { Component, OnInit } from '@angular/core'
+import { ActivatedRoute }    from '@angular/router'
 
-import { Hero, HeroService }    from './hero.service';
+import { Hero, HeroService }    from './hero.service'
 
 @Component({
   template: `
@@ -17,14 +17,14 @@ import { Hero, HeroService }    from './hero.service';
   `
 })
 export class HeroDetailComponent implements OnInit {
-  hero: Hero;
+  hero: Hero
 
   constructor(
     private route: ActivatedRoute,
     private heroService: HeroService) { }
 
   ngOnInit() {
-    let id = parseInt(this.route.snapshot.params['id'], 10);
-    this.heroService.getHero(id).then(hero => this.hero = hero);
+    let id = parseInt(this.route.snapshot.params['id'], 10)
+    this.heroService.getHero(id).then(hero => this.hero = hero)
   }
 }

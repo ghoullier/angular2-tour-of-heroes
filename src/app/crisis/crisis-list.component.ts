@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
-import { Crisis, CrisisService }     from './crisis.service';
+import { Crisis, CrisisService }     from './crisis.service'
 
 @Component({
   template: `
@@ -11,11 +11,11 @@ import { Crisis, CrisisService }     from './crisis.service';
   `
 })
 export class CrisisListComponent implements OnInit {
-  crisises: Promise<Crisis[]>;
+  crisises: Promise<Crisis[]>
 
   constructor(private crisisService: CrisisService) { }
 
   ngOnInit() {
-    this.crisises = this.crisisService.getCrises();
+    this.crisises = this.crisisService.getCrises()
   }
 }
