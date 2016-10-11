@@ -3,7 +3,7 @@ import { UserService }      from '../core/user.service'
 
 @Component({
   selector: 'app-title',
-  template: require('./title.component.html')
+  templateUrl: './title.component.html'
 })
 export class TitleComponent {
   @Input() subtitle = ''

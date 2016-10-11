@@ -5,9 +5,9 @@ import { UserService }             from '../core/user.service'
 
 @Component({
   selector: 'app-contact',
-  template: require('./contact.component.html'),
-  styles: [
-    require('./contact.component.css')
+  templateUrl: './contact.component.html',
+  styleUrls: [
+    './contact.component.css'
   ]
 })
 export class ContactComponent implements OnInit {

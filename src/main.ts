@@ -1,6 +1,16 @@
 import './polyfills.ts'
 
-import { bootstrap } from './bootstrap'
-import { AppModule } from './app/'
+import { enableProdMode } from '@angular/core'
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
 
-bootstrap(AppModule)
+import { environment } from './environments/environment'
+
+import { AppModule } from './app/app.module'
+
+const platform = platformBrowserDynamic()
+
+if (environment.production) {
+  enableProdMode()
+}
+
+platform.bootstrapModule(AppModule)
